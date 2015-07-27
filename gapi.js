@@ -376,7 +376,7 @@ angular.module('gapi', [])
         attemptCounter = 0,
         onAuth = function (response) {
           attemptCounter++;
-          if(attemptCounter > 3) {
+          if(attemptCounter > 1) {
               deferred.reject('Login attempt failed. Attempted to login ' + attemptCounter + ' times.');
               return;
           }
